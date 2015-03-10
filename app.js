@@ -2,17 +2,18 @@
  * Module dependencies.
  */
 
-var express        = require('express'),
-    path           = require('path'),
-    mongoose       = require('mongoose'),
-    logger         = require('morgan'),
-    bodyParser     = require('body-parser'),
-    compress       = require('compression'),
-    favicon        = require('static-favicon'),
-    methodOverride = require('method-override'),
-    errorHandler   = require('errorhandler'),
-    config         = require('./config'),
-    routes         = require('./routes');
+var express           = require('express'),
+    path              = require('path'),
+    mongoose          = require('mongoose'),
+    logger            = require('morgan'),
+    bodyParser        = require('body-parser'),
+    compress          = require('compression'),
+    favicon           = require('static-favicon'),
+    methodOverride    = require('method-override'),
+    errorHandler      = require('errorhandler'),
+    config            = require('./config'),
+    routes            = require('./routes');
+
 
 
 mongoose.connect(config.database.url);
